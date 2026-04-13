@@ -1,0 +1,148 @@
+:root {
+    --color: #041f62;
+    --button :#fa5945;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    
+}
+body{
+background: linear-gradient(114deg, rgba(3, 32, 98, 1) 0%, rgba(34, 22, 96, 1) 50%,rgba(53, 16, 96) 75%, rgba(74, 8, 95, 1) 100%);
+}
+.main{
+    display: flex;
+gap: 10px;
+}
+.box{
+    flex-grow: 3;
+    background-color: white;
+  max-width: 600px;
+  min-height: 100px;
+border-radius: 30px;
+margin-top: 100px;
+margin-left: 20px;
+}
+.box h4{
+padding-top: 30px;
+padding-left: 60px;
+color: var(--color);
+font-family: sans-serif;
+font-weight: bolder;
+
+}
+.box #input{
+    background-color: rgb(236, 236, 236);
+    height: 50px;
+}
+.box #input:focus{
+    background-color: rgb(255, 255, 255);
+  
+}
+.box .top-btn{
+    background-color: var(--button);
+    color: white;
+}
+.box .top-btn:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    color: var(--button);
+    border: 1px solid var(--button);
+}
+.box .mytask{
+  
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+   
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.box li{
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: var(--color);
+}
+.box .mytask input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+
+
+}
+.box .mytask input[type="checkbox"]:checked{
+    accent-color:var(--button); 
+  transform: scale(1.2);
+
+}
+.box ul li{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 30px; */
+
+}
+.box ul li label{
+ flex-grow: 3;
+
+}
+
+/* .box ul table td{
+   width: 700px;
+} */
+.box li button{
+    background-color: transparent;
+    border: none;
+    color: var(--color);
+    font-size: 20px;
+   width: 50px;
+    
+}
+.box li button:hover{
+    color: var(--button);
+    transition: all 0.3s ease-in-out;
+   
+    
+}
+.box li .btn {
+   margin-left: 10em;
+}
+
+
+
+.main .right{
+   padding-left: 30px;
+   margin-top: 120px;
+   color: white;
+   
+}
+.main .right b{
+color: #fa5945;
+
+   
+}
+.main .right h1{
+  letter-spacing: 3px;
+}
+
+
+@media (max-width:800px) {
+    .main .right{
+  display: none;
+   
+}
+}
+
+
+
+
+
+
+/*  {} */
