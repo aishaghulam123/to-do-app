@@ -58,12 +58,33 @@ input.value = "";
         if (checkbox.checked) {
             label.style.textDecoration = "line-through";
             label.style.color = "gray";
+            updateTaskCounts();
         } else {
             label.style.textDecoration = "none";
             label.style.color = "#041f62";
+             updateTaskCounts();
         }
     });
 
+ 
+function updateTaskCounts() {
+    var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+var checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+// document.getElementById("total").textContent = allCheckboxes.length;
+
+document.getElementById("comp").textContent = checkedCount;
+
+
+document.getElementById("remain").textContent = allCheckboxes.length - checkedCount;
+
+}
+// document.getElementById("total").textContent = allCheckboxes.length;
+
+    // document.getElementById("comp").textContent = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    // document.getElementById("remain").textContent = document.querySelectorAll('input[type="checkbox"]:not(:checked)').length;
+    document.getElementById("total").textContent = document.querySelectorAll('input[type="checkbox"]').length;
+
+   
 }
 else {
     alert("Please enter a task");
