@@ -66,16 +66,17 @@ input.value = "";
         }
     });
 
- 
+////// task counter
+
 function updateTaskCounts() {
     var allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
 var checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
 // document.getElementById("total").textContent = allCheckboxes.length;
 
-document.getElementById("comp").textContent = checkedCount;
+document.getElementById("comp").innerHTML = checkedCount;
 
 
-document.getElementById("remain").textContent = allCheckboxes.length - checkedCount;
+document.getElementById("remain").innerHTML = allCheckboxes.length - checkedCount;
 
 }
 // document.getElementById("total").textContent = allCheckboxes.length;
@@ -94,16 +95,19 @@ else {
 }
 
 
-
+///////////// delete all task function
 function deleteAll() {
     ul.innerHTML = "";
     
 }
 
+
+///////////// delete this task function
 function deleteTask(btn) {
     let li = btn.parentNode.parentNode;
     ul.removeChild(li);
 }
+//////////// edit this task function
 
 function editTask(btn) {
     let li = btn.parentNode.parentNode;
@@ -114,14 +118,6 @@ function editTask(btn) {
     }
 }
 
-
-
-
-
-
-
-
- //   label.setAttribute("id", "checked");
 
 
 
