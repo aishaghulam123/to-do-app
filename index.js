@@ -98,6 +98,9 @@ else {
 ///////////// delete all task function
 function deleteAll() {
     ul.innerHTML = "";
+    document.getElementById("total").innerHTML = 0;
+    document.getElementById("comp").innerHTML = 0;
+    document.getElementById("remain").innerHTML = 0;
     
 }
 
