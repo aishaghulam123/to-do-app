@@ -109,6 +109,8 @@ function deleteAll() {
 function deleteTask(btn) {
     let li = btn.parentNode.parentNode;
     ul.removeChild(li);
+var total=        document.getElementById("total").textContent = document.querySelectorAll('input[type="checkbox"]').length;
+total--;
 }
 //////////// edit this task function
 
